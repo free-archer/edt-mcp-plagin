@@ -20,6 +20,29 @@
 3. Plugin запустит `scripts/setup-edt-mcp.ps1`.
 4. После завершения перезапустить EDT.
 
+## Установка из GitHub
+
+```bash
+# 1. Зарегистрировать репозиторий как marketplace
+codex plugin marketplace add free-archer/edt-mcp-plagin
+
+# 2. Установить плагин из него
+codex plugin add edt-mcp-plagin@edt-mcp-plagin
+```
+
+Проверить установку и убедиться, что имя marketplace/плагина совпало:
+
+```bash
+codex plugin list
+```
+
+Удалить:
+
+```bash
+codex plugin remove edt-mcp-plagin@edt-mcp-plagin
+codex plugin marketplace remove edt-mcp-plagin
+```
+
 ## Ручной запуск скрипта
 
 ```powershell
