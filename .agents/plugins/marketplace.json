@@ -1,0 +1,18 @@
+{
+  "name": "edt-mcp-plagin",
+  "interface": {
+    "displayName": "EDT MCP Setup"
+  },
+  "plugins": [
+    {
+      "name": "edt-mcp-plagin",
+      "source": "./",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE",
+        "products": ["codex_cli"]
+      },
+      "category": "dev-tools"
+    }
+  ]
+}
