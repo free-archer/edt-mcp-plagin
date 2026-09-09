@@ -1,0 +1,38 @@
+{
+  "name": "edt-mcp-plagin",
+  "version": "0.1.0",
+  "description": "Local Codex plugin that installs EDT-MCP into 1C:EDT and ships a ready localhost MCP connection for Codex.",
+  "author": {
+    "name": "automacon673"
+  },
+  "homepage": "https://github.com/DitriXNew/EDT-MCP",
+  "repository": "https://github.com/DitriXNew/EDT-MCP",
+  "license": "MIT",
+  "keywords": [
+    "1c",
+    "edt",
+    "mcp",
+    "codex",
+    "powershell",
+    "installer"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "EDT MCP Setup",
+    "shortDescription": "Install EDT-MCP and connect Codex",
+    "longDescription": "Installs EDT-MCP into local 1C EDT, patches the required JVM flag, and ships a ready localhost MCP connection so Codex can use EDT-MCP without editing global config files.",
+    "developerName": "automacon673",
+    "category": "Development",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Install EDT-MCP into my local EDT",
+      "Reconfigure EDT-MCP to use a different port",
+      "Write workspace prefs for EDT-MCP auto-start"
+    ]
+  }
+}
